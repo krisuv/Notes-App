@@ -1,0 +1,70 @@
+button {
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  border-radius: 12px;
+  padding: 8px 16px;
+  line-height: 1.5rem;
+  text-align: center;
+
+  &:has(.icon) {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  &#button-add-new-note {
+    &:disabled {
+      display: none;
+    }
+  }
+  
+  &.primary {
+    background-color: #6B3C9B;
+    color: #FFF;
+
+    &:hover,
+    &:focus-within {
+      background-color: #844DBA;
+    }
+
+    &:active {
+      background-color: #5B2F87;
+    }
+  }
+
+  &.secondary {
+    background-color: transparent;
+    color: #1B1C1E;
+    border: 1px solid;
+    border-color: #BCBCBD;
+
+    &:hover,
+    &:focus-visible {
+      background-color: #E7E7E7;
+    }
+
+    &:active {
+      background-color: #BDBDBD;
+      border-color: #BDBDBD;
+    }
+  }
+
+
+  &.cancel {
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.4875rem;
+    color: #0F75B8;
+    background-color: transparent;
+    border-radius: unset;
+    padding: unset;
+
+    &:hover {
+      font-weight: 600;
+      color: #0F75B8;
+      text-decoration: underline #0F75B8;
+    }
+  }
+
+}

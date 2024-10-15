@@ -1,0 +1,36 @@
+@import url(reset.css);
+@import url(buttons.css);
+@import url(inputs.css);
+
+:host {
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #eeeff0;
+  box-shadow: 0px 0px 16px 0px #00000014;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: -16px;
+  width: calc(100% + 32px);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  color: var(--color-base-dark);
+}
+
+button {
+  align-self: flex-end;
+  &:disabled {
+    cursor: initial;
+    opacity: 0.5;
+  }
+}

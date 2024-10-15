@@ -1,0 +1,56 @@
+@import url(buttons.css);
+
+.notes-empty {
+  padding: 36px 20.5px;
+
+  & h2 {
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  & p {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  & button {
+    margin-inline: auto;
+  }
+}
+
+.icon-wrapper {
+  margin-inline: auto;
+  position: relative;
+  height: 60.44px;
+  width: 60.44px;
+  background-color: var(--color-base-light);
+  border-radius: 50%;
+  z-index: var(--elevation-1);
+
+  margin-bottom: 16px;
+
+  & .icon-no-notes {
+    height: 24px;
+    width: 24px;
+    position: absolute;
+    display: block;
+    z-index: var(--elevation-2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: '';
+    height: 50.44px;
+    width: 50.44px;
+    background-color: var(--color-base-dark);
+    border-radius: 50%;
+
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: var(--elevation-0);
+  }
+}

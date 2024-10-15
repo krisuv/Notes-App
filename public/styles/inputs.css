@@ -1,0 +1,34 @@
+input,
+textarea {
+  font-family: "Inter";
+  &.default {
+    background-color: #eeeff0;
+    padding: 8px 12px;
+    border-radius: 12px;
+
+    gap: 0.75rem;
+
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    color: #5b5c5e;
+    border: 1px solid;
+    border-color: transparent;
+
+    &:hover {
+      background-color: #dcdee0;
+    }
+
+    &:active,
+    &:focus {
+      color: #1b1c1e;
+      border-color: #1b1c1e;
+      background-color: #fff;
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+  min-height: 210px;
+}
